@@ -6827,25 +6827,6 @@ PERFORMANCE OF THIS SOFTWARE.
         }));
         modules_flsModules.gallery = galleyItems;
     }
-    function decorSwipe(images) {
-        let img = document.querySelector(".gallery-furniture__preview"), path = img.getAttribute("src"), count = images.indexOf(path) + 1, buttonPrev = document.querySelector(".furniture__pagination-prev"), buttonNext = document.querySelector(".furniture__pagination-next"), counterPrev = document.querySelector(".counter-decor__prev");
-        counterPrev.textContent = 1;
-        document.querySelector(".counter-decor__next").textContent = images.length;
-        buttonNext.addEventListener("click", (function(e) {
-            if (count > images.length - 1) return;
-            count++;
-            img.src = images[count - 1];
-            counterPrev.textContent = count;
-            console.log(count);
-        }));
-        buttonPrev.addEventListener("click", (function(e) {
-            if (count <= 1) return;
-            --count;
-            console.log(count);
-            img.src = images[count - 1];
-            counterPrev.textContent = count;
-        }));
-    }
     function popup(classPopup, triggerClose, delay, repeat) {
         let elemPopup = document.querySelector(classPopup);
         function activePopup() {
@@ -6866,15 +6847,14 @@ PERFORMANCE OF THIS SOFTWARE.
         activePopup();
         closePopup();
     }
-    popup(".popup-subscribe", ".popup__close", 1e3, 4e4);
-    decorSwipe([ "img/test/01.png", "img/test/02.png", "img/test/03.png", "img/test/04.png", "img/test/03.png", "img/test/02.png", "img/test/01.png" ]);
+    popup(".popup-subscribe", ".popup__close", 1e3, 5e4);
     window["FLS"] = true;
     isWebp();
     menuInit();
     spollers();
     formFieldsInit({
         viewPass: false,
-        autoHeight: false
+        autoHeight: true
     });
     formSubmit();
     formRating();
