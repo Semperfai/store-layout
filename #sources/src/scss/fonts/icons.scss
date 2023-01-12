@@ -1,0 +1,87 @@
+%ic {
+	font-family: "icon";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-cart:before {
+	content: "\e900";
+	font-size: rem(30);
+	color: rgb(255, 255, 255);
+}
+
+.icon-guarantee:before {
+	content: "\e901";
+}
+
+.icon-logo:before {
+	content: "\e902";
+	color: #4b7a59;
+}
+
+.icon-logo-small:before {
+	content: "\e903";
+}
+
+.icon-needle:before {
+	content: "\e904";
+}
+
+.icon-premium:before {
+	content: "\e905";
+}
+
+.icon-rust:before {
+	content: "\e906";
+}
+
+
+.icon-tell:before {
+	content: "\e908";
+}
+
+.icon-traced:before {
+	content: "\e909";
+}
+
+.icon-next:before {
+	content: "\ea3c";
+}
+
+.icon-prev:before {
+	content: "\ea40";
+}
+
+.icon-mail:before {
+	content: "\ea84";
+}
+
+.icon-facebook:before {
+	content: "\ea90";
+}
+
+.icon-instagram:before {
+	content: "\ea92";
+}
